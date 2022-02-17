@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Journey</title>
+    <!-- taiwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <!-- header caption -->
+        <div>
+            <h1 class="text-center text-4xl	font-bold text-cyan-600	m-6">
+                Money Master
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="w-3/4 mx-auto">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-10">
+                <!-- side photo -->
+                <div class="space-y-4">
+                    <img src="photo/calculate.png" alt="">
+                </div>
+                <!-- calculation part -->
+                <div class="space-y-4 bg-sky-100 lg:ml-20 text-center">
+                    <!-- income heading and total income -->
+                    <h1 class="mt-5 text-base text-center font-bold">
+                        Income
+                    </h1>
+                    <div class="flex justify-end w-3/4 mx-auto items-center	">
+                        <h1 class="text-xs">Income:</h1>
+                        <input id="income-input" value="0" class="p-1 ml-3 h-6" type="text">
+                    </div>
+                    <!-- expenses part -->
+                    <h1 class="mt-5 text-base text-center font-bold">
+                        Expenses
+                    </h1>
+                    <div class="flex justify-end w-3/4 mx-auto items-center	">
+                        <h1 class="text-xs">Food:</h1>
+                        <input id="food-input" value="0" class="p-1 ml-3 h-6" type="text">
+                    </div>
+                    <div class="flex justify-end w-3/4 mx-auto items-center	">
+                        <h1 class="text-xs">Rent:</h1>
+                        <input value="0" class="p-1 ml-3 h-6" type="text">
+                    </div>
+                    <div class="flex justify-end w-3/4 mx-auto items-center">
+                        <h1 class="text-xs">Clothes:</h1>
+                        <input value="0" class="p-1 ml-3 h-6" type="text">
+                    </div>
+                    <!-- calculate button -->
+                    <button id="calculation-button" class="px-10 py-1 bg-sky-400 text-white font-semibold rounded">Calculate</button>
+                    <!-- total expensesand balance -->
+                    <div class="flex justify-end w-3/4 mx-auto items-center">
+                        <h1 class="text-base font-bold">
+                            Total Expenses: 
+                        </h1>
+                        <input value="0" class="p-1 ml-3 bg-sky-100 h-6 text-center w-5/12" type="text">
+                    </div>
+                    <div class="flex justify-end w-3/4 mx-auto items-center mt-0">
+                        <h1 class="text-base text-center font-bold">
+                            Balance: 
+                        </h1>
+                        <input value="0" class="p-1 ml-3 bg-sky-100 h-6 text-center w-5/12" type="text">
+                    </div>
+
+                    <!-- saving part -->
+                    <div class="flex justify-end w-3/4 mx-auto items-center">
+                        <h1 class="text-xs">Save:</h1>
+                        <input value="0" class="p-1 ml-3 w-20 h-6 text-center" type="text">
+                        <h1 class="mx-3">%</h1>
+                        <!-- save button -->
+                        <button class="px-5 py-1 bg-sky-400 text-white font-semibold rounded">Save</button>
+                    </div>
+                    <!-- saving amount and balance -->
+                    <div class="flex justify-end w-3/4 mx-auto items-center">
+                        <h1 class="text-base font-bold">
+                            Saving Amount: 
+                        </h1>
+                        <input value="0" class="p-1 ml-3 bg-sky-100 h-6 text-center w-5/12" type="text">
+                    </div>
+                    <div class="flex justify-end w-3/4 mx-auto items-center mt-0">
+                        <h1 class="text-base text-center font-bold">
+                           Remaining Balance: 
+                        </h1>
+                        <input value="0" class="p-1 ml-3 bg-sky-100 h-6 text-center w-5/12" type="text">
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/custom.js"></script>
+</body>
+</html>
